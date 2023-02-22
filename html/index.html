@@ -26,9 +26,15 @@
             </ul>
         </div>
 
-        <div class="nav__profile">
-            <a href="#" class="nav__userName">Имя Фамилия</a>
-            <a href="#"><img src="#" alt="" class="nav__userPhoto"></a>
+        <div class="nav__profile" id="nav__profile">
+            <a href="#" class="nav__userName" id="userName">Имя Фамилия</a>
+            <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="userPhoto"></a>
+            <div class="nav__settings" id="nav__settings">
+                <a href="#" class="nav__userLink">Профиль</a>
+                <a href="#" class="nav__userLink">Настройки</a>
+                <a href="#" class="nav__userLink">Выйти</a>
+            </div>
+            
         </div>
     </nav>
 
@@ -36,9 +42,9 @@
         <div class="container">
 
             <div class="content">
-                <div class="title">
-                    <h1 class="title__text">Сделай свою жизнь ярче!</h1>
-                    <h2 class="subtitle__text">Изучайте английский в увлекательной игровой форме- зарегистрируйстесь на Panda Plus сегодня!</h2>
+                <div class="page1__title">
+                    <h1 class="page1__title__text">Сделай свою жизнь ярче!</h1>
+                    <h2 class="page1__subtitle__text">Изучайте английский в увлекательной игровой форме- зарегистрируйстесь на Panda Plus сегодня!</h2>
                 </div>
                 <div class="button">
                     <a href="#" class="button__item">Начать сейчас</a>
@@ -60,8 +66,8 @@
 <section class="page2">
     <div class="container">
 
-        <div class="page2__title">
-            <p class="page2__title__text">Информация о нас</p>
+        <div class="title">
+            <h2 class="title__text">Информация о нас</h2>
         </div>
 
         <div class="cards">
@@ -89,6 +95,108 @@
     </div><!-- container -->
 </section><!-- page2 -->
 
+<section class="page3">
+    <div class="container">
+        <div class="page3__title">
+            <h2 class="page3__title__text">Учиться удобно</h2>
+        </div>
+        <div class="info">
+
+            <div class="info__item">
+                <div class="info__text">
+                    <p class="info__title">Учебные материалы</p>
+                    <p class="info__subtitle">Мы подготовим для вас все необходимые материалы для учебы по индивидуально составленному плану</p>
+                </div>
+                <img src="../img/notebook.svg" alt="" class="info__icon">
+            </div>
+            <div class="info__item">
+                <div class="info__text">
+                    <p class="info__title">Онлайн формат</p>
+                    <p class="info__subtitle">Занятия проходят в удобное для вас время в онлайн формате в Zoom с педагогом. Заниматься можно из любой точки Земли</p>
+                </div>
+                <img src="../img/earth.svg" alt="" class="info__icon">
+            </div>
+            <div class="info__item">
+                <div class="info__text">
+                    <p class="info__title">Интерактив</p>
+                    <p class="info__subtitle">Интерактивные занятия с ипользованием онлайн-доски vk.com помогают лучше усвоить материал в игровой форме</p>
+                </div>
+                <img src="../img/phone.svg" alt="" class="info__icon">
+            </div>
+
+
+        </div>
+        <img src="../img/lady 1.svg" alt="Girl" class="page3__img">
+    </div>
+</section>
+
+<section class="page4">
+    <div class="container">
+        <div class="page4__wrapper">
+            <div class="page4__wrapper__wrapper">
+                <div class="page4__title">
+                    <h2 class="page4__title__text">Стоимость обучения</h2>
+                </div>
+
+                <div class="study__info">
+                    <div class="study__info__item">
+                        <div class="study__info__text">
+                            <p class="study__info__subtitle">Уникальная методика обучения, разработанная компанией Panda Plus специально для подготовки профессиональных переводчиков</p>
+                        </div>
+                    </div>
+                    <div class="study__info__item">
+                        <div class="study__info__text">
+                            <p class="study__info__subtitle">Игровая механика обучения подстегивает учеников соревноваться друг с другом. Зарабатывай баллы за успешное обучение в игровой форме</p>
+                        </div>
+                    </div>
+                    <div class="study__info__item">
+                        <div class="study__info__text">
+                            <p class="study__info__subtitle">Наши преподаватели являются профессиональными преподавателями и переводчиками. Все они проходили практику в США и Европе</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page4__wrapper__wrapper">
+                <div class="offers">
+                    <div class="offer__line">
+                        <div class="offer offer--first">
+                            <p class="offer__text offer__text--first">Первое пробное занятие</p>
+                            <div class="offer__price--first">
+                                <p class="offer__price__text offer__price__text--first"> Стоимость <span>0 р.</span></p>
+                            </div>
+                            <img src="../img/plus.svg" class="offer__add"></img>
+                        </div>
+                        <div class="offer">
+                            <p class="offer__text">1 занятие</p>
+                            <div class="offer__price">
+                                <p class="offer__price__text"> Стоимость <span>1000 р.</span></p>
+                            </div>
+                            <img src="../img/plus.svg" class="offer__add"></img>
+                        </div>
+                    </div>
+                    <div class="offer__line">
+                        <div class="offer">
+                            <p class="offer__text">5 занятий</p>
+                            <div class="offer__price">
+                                <p class="offer__price__text"> Стоимость <span>4000 р.</span></p>
+                            </div>
+                            <img src="../img/plus.svg" class="offer__add"></img>
+                        </div>
+                        <div class="offer">
+                            <p class="offer__text">10 занятий</p>
+                            <div class="offer__price">
+                                <p class="offer__price__text"> Стоимость <span>8000 р.</span></p>
+                            </div>
+                            <img src="../img/plus.svg" class="offer__add"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <script src="../js/main.js"></script>
 </body>
