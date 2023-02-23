@@ -1,9 +1,9 @@
 const cardItem = document.querySelector('.card__item'),
     cardItems = document.querySelectorAll('card__item'),
     cardItemActive = document.querySelector('.card__item.active'),
-    navUserName = document.getElementById('userName'),
+    navUserName = document.getElementById('nav__userName'),
     navSettings = document.getElementById('nav__settings')
 
-    userName.addEventListener('click', () =>  {
+    navUserName.addEventListener('click', () =>  {
     navSettings.classList.toggle('active')
 })
