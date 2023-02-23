@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" id="theme">
+    <link rel="shortcut icon" href="../img/icon.png">
+    <title>Настройки</title>
+</head>
+<body>
+    
+<section class="settingsPage">
+
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="../img/rocket.svg" alt="" class="nav__logo--img">
+            <p class="nav__logo--text">Panda Plus</p>
+        </div>
+            
+        <div class="nav__menu">
+            <ul class="nav__menu__list">
+                <a href="#"><li class="nav__menu--item">Главная</li></a>
+                <a href="#"><li class="nav__menu--item">О нас</li></a>
+                <a href="#"><li class="nav__menu--item">Тарифы</li></a>
+                <a href="#"><li class="nav__menu--item">Контакты</li></a>
+            </ul>
+        </div>
+
+        <div class="nav__profile" id="nav__profile">
+            <a href="#" class="nav__userName" id="nav__userName">Имя Фамилия</a>
+            <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a>
+            <div class="nav__settings" id="nav__settings">
+                <a href="#" class="nav__userLink">Профиль</a>
+                <a href="#" class="nav__userLink">Настройки</a>
+                <a href="#" class="nav__userLink">Выйти</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="settings">
+
+            <aside class="sidebar__left">
+                <p class="settings__title">Настройки</p>
+                <div class="settings__tabs">
+                    <a href="#" class="setting__tab active">Общие настройки</a>
+                    <a href="#" class="setting__tab">Настройки профиля</a>
+                    <a href="#" class="setting__tab">Настройки аккаунта</a>
+                </div>
+            </aside><!-- sidebar -->
+
+            <aside class="sidebar__right">
+                
+                <label class="checkbox ">
+                    <div class="checkbox__text">Темный режим</div>
+                    <input type="checkbox" id="darkmodeButton" class="settings__checkbox"/>
+                    <div class="checkbox__checkmark"></div>
+                </label>
+                
+            </aside>
+
+        </div><!-- settings -->
+    </div><!-- container -->
+
+</section>
+<script src="../js/main.js"></script>
+</body>
+</html>
