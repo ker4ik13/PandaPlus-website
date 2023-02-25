@@ -126,3 +126,11 @@
 .itc-slider__indicator_active {
   background-color: rgb(182 255 124 / 100%);
 }
+@media(max-width: 1670px){
+  .itc-slider__item{
+    /* flex: 0 0 70%;
+    max-width: 70%; */
+    /* max-width: 60%;
+    margin-right: -145px; */
+  }
+}

@@ -11,31 +11,37 @@
 </head>
 <body>
     
-<section class="page1">
+<section class="page1" id="page1">
     <nav class="nav">
         <div class="nav__logo">
             <img src="../img/rocket.svg" alt="" class="nav__logo--img">
             <p class="nav__logo--text">Panda Plus</p>
         </div>
-            
-        <div class="nav__menu">
-            <ul class="nav__menu__list">
-                <a href="#"><li class="nav__menu--item">Главная</li></a>
-                <a href="#"><li class="nav__menu--item">О нас</li></a>
-                <a href="#"><li class="nav__menu--item">Тарифы</li></a>
-                <a href="#"><li class="nav__menu--item">Контакты</li></a>
-            </ul>
+        
+        <div class="nav__burger" id="nav__burger">
+            <span></span>
         </div>
-
-        <div class="nav__profile" id="nav__profile">
-            <a href="#" class="nav__userName" id="nav__userName">Имя Фамилия</a>
-            <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a>
-            <div class="nav__settings" id="nav__settings">
-                <a href="#" class="nav__userLink">Профиль</a>
-                <a href="settings.html" class="nav__userLink">Настройки</a>
-                <a href="#" class="nav__userLink">Выйти</a>
+        <div class="nav__wrapper" id="nav__wrapper">
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__menu__list">
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page1">Главная</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page2">О нас</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page3">Тарифы</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page4">Контакты</li></a>
+                </ul>
             </div>
-            
+
+            <div class="nav__profile" id="nav__profile">
+                <a href="register.html" class="nav__userName" id="nav__userName">Зарегистрироваться</a>
+                <!-- <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a> -->
+                <div class="nav__settings" id="nav__settings">
+                <div class="nav__settings" id="nav__settings">
+                    <a href="#" class="nav__userLink">Профиль</a>
+                    <a href="settings.html" class="nav__userLink">Настройки</a>
+                    <a href="#" class="nav__userLink">Выйти</a>
+                </div>
+                
+            </div>
         </div>
     </nav>
 
@@ -64,7 +70,7 @@
 
 </section> <!-- page1 -->
 
-<section class="page2">
+<section class="page2" id="page2">
     <div class="container">
 
         <div class="title">
@@ -72,22 +78,28 @@
         </div>
 
         <div class="cards">
-            
-            <div class="card__item card1">
-                <img class="card__icon" src="../img/people-icon.svg" alt="">
-                <p class="card__text">350+ человек</p>
+
+            <div class="cards__wrapper">
+
+                <div class="card__item card1">
+                    <img class="card__icon" src="../img/people-icon.svg" alt="">
+                    <p class="card__text">350+ человек</p>
+                </div>
+                <div class="card__item card2">
+                    <img class="card__icon" src="../img/money-icon.svg" alt="">
+                    <p class="card__text">Приятные цены</p>
+                </div>
+
             </div>
-            <div class="card__item card2">
-                <img class="card__icon" src="../img/money-icon.svg" alt="">
-                <p class="card__text">Приятные цены</p>
-            </div>
-            <div class="card__item card3">
-                <img class="card__icon" src="../img/teacher-icon.svg" alt="">
-                <p class="card__text">Иностранные коучи</p>
-            </div>
-            <div class="card__item card4">
-                <img class="card__icon" src="../img/book-icon.svg" alt="">
-                <p class="card__text">Качественное обучение</p>
+            <div class="cards__wrapper">
+                <div class="card__item card3">
+                    <img class="card__icon" src="../img/teacher-icon.svg" alt="">
+                    <p class="card__text">Иностранные коучи</p>
+                </div>
+                <div class="card__item card4">
+                    <img class="card__icon" src="../img/book-icon.svg" alt="">
+                    <p class="card__text">Качественное обучение</p>
+                </div>
             </div>
 
 
@@ -96,7 +108,7 @@
     </div><!-- container -->
 </section><!-- page2 -->
 
-<section class="page3">
+<section class="page3" id="page3">
     <div class="container">
         <div class="page3__title">
             <h2 class="page3__title__text">Учиться удобно</h2>
@@ -131,7 +143,7 @@
     </div>
 </section>
 
-<section class="page4">
+<section class="page4" id="page4">
     <div class="container">
         <div class="page4__wrapper">
             <div class="page4__wrapper__wrapper">
@@ -199,85 +211,8 @@
     </div><!-- container -->
 </section><!-- page4 -->
 
-<section class="reviews">
-        <div class="title">
-            <h2 class="title__text title__text__reviews">Отзывы наших студентов</h2>
-        </div>
 
-        <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000" data-swipe="true" data-refresh="true">
-            <div class="itc-slider__wrapper">
-              <div class="itc-slider__items">
-                <div class="itc-slider__item">
-
-                    <div class="review">
-                        <div class="review__person">
-                            <img src="#" alt="" class="review__photo">
-                            <p class="review__userName">Алексей</p>
-                            <p class="review__info">Санкт-Петербург выпускник 2021 года</p>
-                            <div class="review__contacts">
-                                <a href="#"><img src="../img/twitter-icon.svg" alt="Twitter" class="review__contacts__item"></a>
-                                <a href=""><img src="../img/facebook-icon.svg" alt="FaceBook" class="review__contacts__item"></a>
-                                <a href=""><img src="../img/vk-icon.svg" alt="VK" class="review__contacts__item"></a>
-                            </div>
-                        </div>
-                        <div class="review__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ut facere impedit, neque quae eius, sint animi exercitationem tenetur consequuntur fuga! At nemo, qui eum culpa necessitatibus quo dicta natus?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam magnam odio asperiores voluptate recusandae at obcaecati itaque dolorem debitis nesciunt nemo iste, quae nihil nisi quo ullam ea unde amet.</p>
-                        </div>
-                    </div>
-
-                </div><!-- itc-slider__item -->
-
-                <div class="itc-slider__item">
-                    <div class="review">
-                        <div class="review__person">
-                            <img src="#" alt="" class="review__photo">
-                            <p class="review__userName">Алексей</p>
-                            <p class="review__info">Санкт-Петербург выпускник 2021 года</p>
-                            <div class="review__contacts">
-                                <a href="#"><img src="../img/twitter-icon.svg" alt="Twitter" class="review__contacts__item"></a>
-                                <a href=""><img src="../img/facebook-icon.svg" alt="FaceBook" class="review__contacts__item"></a>
-                                <a href=""><img src="../img/vk-icon.svg" alt="VK" class="review__contacts__item"></a>
-                            </div>
-                        </div>
-                        <div class="review__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ut facere impedit, neque quae eius, sint animi exercitationem tenetur consequuntur fuga! At nemo, qui eum culpa necessitatibus quo dicta natus?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam magnam odio asperiores voluptate recusandae at obcaecati itaque dolorem debitis nesciunt nemo iste, quae nihil nisi quo ullam ea unde amet.</p>
-                        </div>
-                    </div>
-                </div><!-- itc-slider__item -->
-
-                <div class="itc-slider__item">
-                    <div class="review">
-                        <div class="review__person">
-                            <img src="#" alt="" class="review__photo">
-                            <p class="review__userName">Алексей</p>
-                            <p class="review__info">Санкт-Петербург выпускник 2021 года</p>
-                            <div class="review__contacts">
-                                <a href="#"><img src="../img/twitter-icon.svg" alt="Twitter" class="review__contacts__item"></a>
-                                <a href=""><img src="../img/facebook-icon.svg" alt="FaceBook" class="review__contacts__item"></a>
-                                <a href=""><img src="../img/vk-icon.svg" alt="VK" class="review__contacts__item"></a>
-                            </div>
-                        </div>
-                        <div class="review__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ut facere impedit, neque quae eius, sint animi exercitationem tenetur consequuntur fuga! At nemo, qui eum culpa necessitatibus quo dicta natus?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam magnam odio asperiores voluptate recusandae at obcaecati itaque dolorem debitis nesciunt nemo iste, quae nihil nisi quo ullam ea unde amet.</p>
-                        </div>
-                    </div>
-                </div><!-- itc-slider__item -->
-
-            </div><!-- itc-slider__items -->
-            <ol class="itc-slider__indicators">
-                <li class="itc-slider__indicator" data-slide-to="0"></li>
-                <li class="itc-slider__indicator" data-slide-to="1"></li>
-                <li class="itc-slider__indicator" data-slide-to="2"></li>
-            </ol>
-            </div><!-- itc-slider__wrapper -->
-        </div><!-- itc-slider -->
-
-</section><!-- reviews -->
-
-<section class="contact__form">
+<section class="contact__form" id="contact__form">
     <div class="container">
         <div class="contact__form--wrapper">
 
@@ -287,8 +222,8 @@
             </div>
 
             <form action="#" method="post" name="contact__form" class="form">
-                <input type="text" class="userName form__input" name="userName" placeholder="Ваше имя">
-                <input type="email" class="userEmail form__input" name="userEmail" placeholder="+7 (___) - ___ - __ - __">
+                <input type="text" class="userName form__input" name="userName" placeholder="Ваше имя" pattern="[А-ЯЕЁ]{1}[а-яеё]+">
+                <input type="email" class="userEmail form__input" name="userEmail" placeholder="Ваш email" pattern="[A-Za-z0-9]+\@\[a-z]+\.[a-z]+">
                 <button class="submit__button" name="contact__form">Заказать звонок</button>
             </form>
 
@@ -317,9 +252,9 @@
             <div class="footer__right">
                 <div class="footer__contacts">
                     <div class="review__contacts">
-                        <a href="#"><img src="../img/twitter-icon.svg" alt="Twitter" class="review__contacts__item"></a>
-                        <a href=""><img src="../img/facebook-icon.svg" alt="FaceBook" class="review__contacts__item"></a>
-                        <a href=""><img src="../img/vk-icon.svg" alt="VK" class="review__contacts__item"></a>
+                        <a href="" target="_blank"><img src="../img/twitter-icon.svg" alt="Twitter" class="review__contacts__item"></a>
+                        <a href="" target="_blank"><img src="../img/facebook-icon.svg" alt="FaceBook" class="review__contacts__item"></a>
+                        <a href="" target="_blank"><img src="../img/vk-icon.svg" alt="VK" class="review__contacts__item"></a>
                     </div>
                 </div>
             </div>
