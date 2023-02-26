@@ -17,25 +17,30 @@
             <img src="../img/rocket.svg" alt="" class="nav__logo--img">
             <p class="nav__logo--text">Panda Plus</p>
         </div>
-            
-        <div class="nav__menu">
-            <ul class="nav__menu__list">
-                <a href="index.html"><li class="nav__menu--item">Главная</li></a>
-                <a href="index.html"><li class="nav__menu--item">О нас</li></a>
-                <a href="index.html"><li class="nav__menu--item">Тарифы</li></a>
-                <a href="index.html"><li class="nav__menu--item">Контакты</li></a>
-            </ul>
+        
+        <div class="nav__burger" id="nav__burger">
+            <span></span>
         </div>
+        <div class="nav__wrapper" id="nav__wrapper">
+            <div class="nav__menu">
+                <ul class="nav__menu__list">
+                    <a href="index.html"><li class="nav__menu--item">Главная</li></a>
+                    <a href="index.html"><li class="nav__menu--item">О нас</li></a>
+                    <a href="index.html"><li class="nav__menu--item">Тарифы</li></a>
+                    <a href="index.html"><li class="nav__menu--item">Контакты</li></a>
+                </ul>
+            </div>
 
-        <div class="nav__profile" id="nav__profile">
-            <a href="settings.html" class="nav__userName" id="nav__userName">Настройки</a>
-            <!-- <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a>
-            <div class="nav__settings" id="nav__settings">
-                <a href="#" class="nav__userLink">Профиль</a>
-                <a href="settings.html" class="nav__userLink">Настройки</a>
-                <a href="#" class="nav__userLink">Выйти</a>
-            </div> -->
-            
+            <div class="nav__profile" id="nav__profile">
+                <a href="settings.html" class="nav__userName" id="nav__userName">Настройки</a>
+                <!-- <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a>
+                <div class="nav__settings" id="nav__settings">
+                    <a href="#" class="nav__userLink">Профиль</a>
+                    <a href="settings.html" class="nav__userLink">Настройки</a>
+                    <a href="#" class="nav__userLink">Выйти</a>
+                </div> -->
+                
+            </div>
         </div>
     </nav>
 
@@ -48,7 +53,7 @@
         
         <div class="register__right">
             <p class="register__title">Регистрация</p>
-            <form action="#" method="post" class="registerForm">
+            <form action="404.html" method="post" class="registerForm">
 
                 <div class="form__items">
                     <label class="form__text" for="name">Имя Фамилия</label>
@@ -67,7 +72,7 @@
                     <input class="register__input" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                 </div>
                 <div class="form__items">
-                    <button class="register__button" id="register__button" name="registerForm">Зарегистрироваться</button>
+                    <a href="404.html" class="register__button" id="register__button" name="registerForm">Зарегистрироваться</a>
                 </div>
 
             </form>
@@ -75,6 +80,7 @@
     </div>
 
 </section><!-- registerPage -->
+
 <script src="../js/main.js"></script>
 </body>
 </html>

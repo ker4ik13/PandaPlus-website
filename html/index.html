@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../img/icon.png">
     <title>Panda Plus</title>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <body>
     
 <section class="page1" id="page1">
@@ -24,10 +25,10 @@
         <div class="nav__wrapper" id="nav__wrapper">
             <div class="nav__menu" id="nav__menu">
                 <ul class="nav__menu__list">
-                    <a href="#"><li class="nav__menu--item" data-scroll="#page1">Главная</li></a>
-                    <a href="#"><li class="nav__menu--item" data-scroll="#page2">О нас</li></a>
-                    <a href="#"><li class="nav__menu--item" data-scroll="#page3">Тарифы</li></a>
-                    <a href="#"><li class="nav__menu--item" data-scroll="#page4">Контакты</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page1" id="nav__menu--item">Главная</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page2" id="nav__menu--item">О нас</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#page4" id="nav__menu--item">Тарифы</li></a>
+                    <a href="#"><li class="nav__menu--item" data-scroll="#contact__form" id="nav__menu--item">Контакты</li></a>
                 </ul>
             </div>
 
@@ -54,7 +55,7 @@
                     <h2 class="page1__subtitle__text">Изучайте английский в увлекательной игровой форме- зарегистрируйстесь на Panda Plus сегодня!</h2>
                 </div>
                 <div class="button">
-                    <a href="#" class="button__item">Начать сейчас</a>
+                    <a href="#" class="button__item" data-scroll="#page4">Начать сейчас</a>
                 </div>
                 <div class="content__image">
                     <img src="../img/people1.svg" alt="">
@@ -178,14 +179,14 @@
                             <div class="offer__price--first">
                                 <p class="offer__price__text offer__price__text--first"> Стоимость <span>0 р.</span></p>
                             </div>
-                            <img src="../img/plus.svg" class="offer__add"></img>
+                            <img src="../img/plus.svg" class="offer__add add1"></img>
                         </div>
                         <div class="offer">
                             <p class="offer__text">1 занятие</p>
                             <div class="offer__price">
                                 <p class="offer__price__text"> Стоимость <span>1000 р.</span></p>
                             </div>
-                            <img src="../img/plus.svg" class="offer__add"></img>
+                            <img src="../img/plus.svg" class="offer__add add2"></img>
                         </div>
                     </div>
                     <div class="offer__line">
@@ -194,14 +195,14 @@
                             <div class="offer__price">
                                 <p class="offer__price__text"> Стоимость <span>4000 р.</span></p>
                             </div>
-                            <img src="../img/plus.svg" class="offer__add"></img>
+                            <img src="../img/plus.svg" class="offer__add add3"></img>
                         </div>
                         <div class="offer">
                             <p class="offer__text">10 занятий</p>
                             <div class="offer__price">
                                 <p class="offer__price__text"> Стоимость <span>8000 р.</span></p>
                             </div>
-                            <img src="../img/plus.svg" class="offer__add"></img>
+                            <img src="../img/plus.svg" class="offer__add add4"></img>
                         </div>
                     </div>
                 </div>

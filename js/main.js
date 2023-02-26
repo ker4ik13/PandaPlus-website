@@ -6,9 +6,22 @@ const cardItem = document.querySelector('.card__item'),
     navBurger = document.getElementById('nav__burger'),
     menu = document.getElementById('nav__wrapper');
 
-navUserName.addEventListener('click', () => {
-    navSettings.classList.toggle('open');
-});
+/* Offers */
+
+
+/* Scroll */
+$('[data-scroll]').on('click', function(event) {
+    event.preventDefault();
+    
+    let elementId = $(this).data('scroll');
+    let elementOffset = $(elementId).offset().top;
+
+    $('html, body').animate({
+        scrollTop: elementOffset - 80
+    }, 1000)
+})
+
+/* Burger menu */
 
 navBurger.addEventListener('click', () => {
     menu.classList.toggle('active'),
@@ -16,23 +29,14 @@ navBurger.addEventListener('click', () => {
 });
 
 
+
+
+
+/* Dont working cards on second page */
+
 /* cardItem.addEventListener('click', () => {
     cardItem.classList.add('active');
 });
  */
- /* switch dark mode */
-
-
-/* let switchMode = document.getElementById('darkmodeButton');
-
-switchMode.onclick = function() {
-    let theme = document.getElementById('theme');
-
-    if(theme.getAttribute('href') == '../css/style.css') {
-        theme.href = '../css/darkmode-style.css';
-    } else {
-        theme.href = '../css/style.css';
-    }
-} */
 
 

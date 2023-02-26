@@ -93,6 +93,9 @@ body{
     background-color: var(--main-color);
     box-shadow: 0 -1px 5px #333;
 }
+.nav__non-fixed{
+    position: relative;
+}
 .nav__logo {
     display: flex;
     margin-right: 50px;
@@ -274,7 +277,7 @@ body{
     background-color: var(--light-mode-bg);
 }
 .title{
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
 .title__text{
@@ -544,6 +547,8 @@ body{
     opacity: .6;
 }
 
+
+
 /* Reviews */
 .reviews{
     background-color: var(--light-mode-bg);
@@ -747,10 +752,19 @@ body{
     background-color: #D9D9D9;
     padding-left: 14px;
     align-items: center;
+    transition: background-color .2s linear;
 
 }
-.active {
+.setting__tab:hover{
+    background-color: #f4f4f4a4;
+}
+/* Хуй пойми что */
+.setting__tab.active{
     background-color: var(--light-mode-bg);
+    transition: all .2s linear;
+}
+.settings__icon{
+    display: none;
 }
 .sidebar__right{
     max-width: 1400px;
@@ -760,6 +774,20 @@ body{
     background-color: #D9D9D9;
     padding: 40px;
 }
+
+.sidebar__right-none{
+    display: flex;
+}
+.general_settings{
+    display: none;
+}
+.profile__settings{
+    display: none;
+}
+.account__settings{
+    display: none;
+}
+
 /* Checkbox */
 .checkbox {
     height: 30px;
@@ -842,6 +870,7 @@ body{
 .register__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 80px;
 }
 .register__left {
     display: flex;
@@ -975,6 +1004,40 @@ body{
         transform: translate(0, 0);
     }
 
+}
+.notFound__page{
+    background-color: var(--light-mode-bg);
+}
+.wrapper__404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding-bottom: 60px;
+}
+.img_404{
+    margin-top: 100px;
+    max-height: 400px;
+}
+.text__404{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 24px;
+    color: var(--light-mode-text);
+}
+.link__404 {
+    margin-top: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding: 17px 37px;
+    border-radius: 20px;
+    transition: all .2s linear;
+    background-color: var(--second-color);
+}
+.link__404:hover{
+    background-color: #ac2b25;
 }
 
 /* Media for dark mode */
@@ -1192,6 +1255,36 @@ body{
         padding-right: 20px;
         transform: translate(-30px, 0);
     }
+    .register__wrapper{
+        padding-top: 80px;
+    }
+    .register__img{
+        transform: scale(.7);
+    }
+    .register__text{
+        font-size: 24px;
+        margin-top: 0;
+        max-width: 400px;
+    }
+    .register__left{
+        padding-top: 0;
+        height: 803px;
+    }
+    .register__title{
+        font-size: 24px;
+        margin-top: 60px;
+    }
+    .form__items{
+        
+    }
+    .register__input{
+        max-width: 300px;
+        margin-bottom: 40px;
+    }
+    .register__button{
+        font-size: 20px;
+    }
+
 }
 @media(max-width: 920px){
     .content{
@@ -1395,6 +1488,56 @@ body{
     .footer__center{
         margin-bottom: 20px;
     }
+    .register__wrapper{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .register__left{
+        width: 100%;
+        height: auto;
+    }
+    .register__text{
+        margin-bottom: 30px;
+    }
+    .register__right{
+        width: 100%;
+        justify-content: center;
+    }
+    .register__title{
+        margin-top: 30px;
+        font-size: 28px;
+    }
+    .register__input{
+        max-width: none;
+    }
+    .register__button{
+        margin-bottom: 50px;
+    }
+    .setting__tab p{
+        display: none;
+    }
+    .settings__title{
+        display: none;
+    }
+    .settings__icon{
+        display: flex;
+    }
+    .sidebar__left{
+        max-width: 120px;
+        padding-top: 30px;
+        height: 400px;
+    }
+    .sidebar__right{
+        height: 400px;
+        padding: 30px 20px;
+    }
+    .setting__tab{
+        width: 80px;
+        display: flex;
+    }
+    .checkbox__text{
+        font-size: 18px;
+    }
     
 }
 @media(max-width: 570px){
@@ -1481,6 +1624,13 @@ body{
         font-size: 20px;
         max-width: 360px;
     }
+    .register__text{
+        font-size: 20px;
+        max-width: 290px;
+    }
+    .register__input{
+        max-width: 400px;
+    }
 }
 @media(max-width: 430px){
     
@@ -1532,5 +1682,15 @@ body{
     .submit__button {
         font-size: 16px;
         padding: 15px 30px;
+    }
+    .register__img{
+        transform: scale(.5);
+        margin-top: -70px;
+    }
+    .register__text{
+        margin-top: -70px;
+    }
+    .register__input{
+        max-width: 300px;
     }
 }

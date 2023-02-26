@@ -12,29 +12,34 @@
     
 <section class="settingsPage">
 
-    <nav class="nav">
+    <nav class="nav nav__non-fixed">
         <div class="nav__logo">
             <img src="../img/rocket.svg" alt="" class="nav__logo--img">
             <p class="nav__logo--text">Panda Plus</p>
         </div>
-            
-        <div class="nav__menu">
-            <ul class="nav__menu__list">
-                <a href="index.html"><li class="nav__menu--item">Главная</li></a>
-                <a href="index.html"><li class="nav__menu--item">О нас</li></a>
-                <a href="index.html"><li class="nav__menu--item">Тарифы</li></a>
-                <a href="index.html"><li class="nav__menu--item">Контакты</li></a>
-            </ul>
+           
+        <div class="nav__burger" id="nav__burger">
+            <span></span>
         </div>
+        <div class="nav__wrapper" id="nav__wrapper">
+            <div class="nav__menu">
+                <ul class="nav__menu__list">
+                    <a href="index.html"><li class="nav__menu--item">Главная</li></a>
+                    <a href="index.html"><li class="nav__menu--item">О нас</li></a>
+                    <a href="index.html"><li class="nav__menu--item">Тарифы</li></a>
+                    <a href="index.html"><li class="nav__menu--item">Контакты</li></a>
+                </ul>
+            </div>
 
-        <div class="nav__profile" id="nav__profile">
-            <a href="register.html" class="nav__userName" id="nav__userName">Зарегистрироваться</a>
-            <!-- <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a>
-            <div class="nav__settings" id="nav__settings">
-                <a href="#" class="nav__userLink">Профиль</a>
-                <a href="#" class="nav__userLink">Настройки</a>
-                <a href="#" class="nav__userLink">Выйти</a>
-            </div> -->
+            <div class="nav__profile" id="nav__profile">
+                <a href="register.html" class="nav__userName" id="nav__userName">Зарегистрироваться</a>
+                <!-- <a href="#"><img src="../img/standart-userPhoto.png" alt="" class="nav__userPhoto" id="nav__userPhoto"></a>
+                <div class="nav__settings" id="nav__settings">
+                    <a href="#" class="nav__userLink">Профиль</a>
+                    <a href="#" class="nav__userLink">Настройки</a>
+                    <a href="#" class="nav__userLink">Выйти</a>
+                </div> -->
+            </div>
         </div>
     </nav>
 
@@ -44,26 +49,36 @@
             <aside class="sidebar__left">
                 <p class="settings__title">Настройки</p>
                 <div class="settings__tabs">
-                    <a href="#" class="setting__tab active">Общие настройки</a>
-                    <a href="#" class="setting__tab">Настройки профиля</a>
-                    <a href="#" class="setting__tab">Настройки аккаунта</a>
+                    <a href="#" class="setting__tab general_settings--btn">
+                        <img class="settings__icon" src="../img/settings.svg" alt=""><p>Общие настройки</p>
+                    </a>
+                    <a href="#" class="setting__tab profile__settings--btn">
+                        <img src="../img/profile.svg" alt="" class="settings__icon"><p>Настройки профиля</p></a>
+                    <a href="#" class="setting__tab account__settings--btn">
+                        <img src="../img/account.svg" alt="" class="settings__icon"><p>Настройки аккаунта</p></a>
                 </div>
             </aside><!-- sidebar -->
 
-            <aside class="sidebar__right">
-                
+            <aside class="sidebar__right sidebar__right-none"></aside>
+
+            <aside class="sidebar__right general_settings">
                 <label class="checkbox ">
                     <div class="checkbox__text">Темный режим</div>
                     <input type="checkbox" id="darkmodeButton" class="settings__checkbox"/>
                     <div class="checkbox__checkmark"></div>
                 </label>
-                
+            </aside>
+            <aside class="sidebar__right profile__settings">
+                <p>Пока вкладка не готова</p>
+            </aside>
+            <aside class="sidebar__right account__settings">
+                <p>Пока вкладка не готова</p>
             </aside>
 
         </div><!-- settings -->
     </div><!-- container -->
 
 </section>
-<script src="../js/main.js"></script>
+<script src="../js/settings.js"></script>
 </body>
 </html>
