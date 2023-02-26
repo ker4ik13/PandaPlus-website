@@ -134,3 +134,9 @@
     margin-right: -145px; */
   }
 }
+@media(max-width: 680px){
+  .itc-slider__item{
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
