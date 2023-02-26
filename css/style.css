@@ -169,28 +169,6 @@ body{
 }
 .nav__settings{
     display: none;
-    position: absolute;
-    top: 60px;
-    left: 34%;
-    transform: translate(-50%, 0);
-    width: 160px;
-    background-color: #dddddd;
-    border-radius: 16px;
-    z-index: 3;
-}
-.nav__settings.open{
-    display: block;
-}
-.nav__settings::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #dddddd;
-    top: -5px;
-    left: 50%;
-    transform: translate(-50%, 0) rotate(45deg);
-    z-index: 1;
 }
 .nav__userLink{
     display: block;
@@ -931,7 +909,7 @@ body{
 .register__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 .register__left {
     display: flex;
@@ -1175,6 +1153,12 @@ body{
     }
 }
 @media(max-width: 1100px){
+    .nav{
+        height: 60px;
+    }
+    .nav__settings{
+        display: block;
+    }
     .title__text{
         font-size: 40px;
     }
@@ -1227,7 +1211,7 @@ body{
     .nav__burger{
 		display: block;
 		position: fixed;
-		top: 30px;
+		top: 20px;
 		right: 30px;
 		width: 30px;
 		height: 20px;
@@ -1315,9 +1299,6 @@ body{
         justify-content: flex-end;
         padding-right: 20px;
         transform: translate(-30px, 0);
-    }
-    .register__wrapper{
-        padding-top: 80px;
     }
     .register__img{
         transform: scale(.7);
@@ -1556,6 +1537,9 @@ body{
         height: 90px;
         width: 90px;
     }
+    .offer__added{
+        font-size: 22px;
+    }
     .contact__form{
         padding-top: 70px;
     }
@@ -1597,7 +1581,6 @@ body{
     }
     .register__wrapper{
         flex-direction: column;
-        padding-top: 40px;
     }
     .register__left{
         width: 100%;
@@ -1623,11 +1606,32 @@ body{
     .setting__tab p{
         display: none;
     }
+    .setting__tab{
+        position: relative;
+    }
+    .setting__tab:first-child:before{
+        content: url('../img/settings.svg');
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    .setting__tab:nth-child(2):before{
+        content: url('../img/profile.svg');
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    .setting__tab:last-child:before{
+        content: url('../img/account.svg');
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
     .settings__title{
         display: none;
-    }
-    .settings__icon{
-        display: flex;
     }
     .sidebar__left{
         max-width: 120px;
@@ -1719,6 +1723,13 @@ body{
         bottom: 10px;
         right: 10px;
         transform: scale(.7);
+    }
+    .offer__add.rotated {
+        transform: rotate(45deg) scale(.7);
+        transition: transform .2s ease-in;
+    }
+    .offer__added{
+        font-size: 20px;
     }
     .page3{
         min-height: 1000px;
@@ -1836,6 +1847,9 @@ body{
     .offer__price__text {
         font-size: 10px;
         max-width: 69px;
+    }
+    .offer__added{
+        font-size: 16px;
     }
     .contact__form__subtitle__text {
         font-size: 18px;
