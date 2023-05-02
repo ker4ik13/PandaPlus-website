@@ -1,40 +1,18 @@
-const cardItem = document.querySelector('.card__item'),
-    cardItems = document.querySelectorAll('card__item'),
-    navUserName = document.getElementById('nav__userName'),
-    navSettings = document.getElementById('nav__settings'),
-    navBurger = document.getElementById('nav__burger'),
-    menu = document.getElementById('nav__wrapper');
+import burger from "./burger.js";
+burger();
 
+const cardItems = document.querySelectorAll('.card__item');
 /* Cards */
 
-let card1 = document.querySelector('.card1'),
-    card2 = document.querySelector('.card2'),
-    card3 = document.querySelector('.card3'),
-    card4 = document.querySelector('.card4');
-
-card1.addEventListener('click', () => {
-    card1.classList.toggle('active');
-    card2.classList.remove('active');
-    card3.classList.remove('active');
-    card4.classList.remove('active');
-})
-card2.addEventListener('click', () => {
-    card2.classList.toggle('active');
-    card1.classList.remove('active');
-    card3.classList.remove('active');
-    card4.classList.remove('active');
-})
-card3.addEventListener('click', () => {
-    card3.classList.toggle('active');
-    card1.classList.remove('active');
-    card2.classList.remove('active');
-    card4.classList.remove('active');
-})
-card4.addEventListener('click', () => {
-    card4.classList.toggle('active');
-    card1.classList.remove('active');
-    card2.classList.remove('active');
-    card3.classList.remove('active');
+cardItems.forEach(card =>{
+    card.addEventListener('click', (event) => {
+        if(event.currentTarget.classList.contains('active')){
+            card.classList.remove('active');
+        } else {
+            cardItems.forEach(item => item.classList.remove('active'));
+            card.classList.add('active')
+        }
+    })
 })
 
 /* Scroll */
@@ -51,13 +29,6 @@ $('[data-scroll]').on('click', function(event) {
         scrollTop: elementOffset - 80
     }, 1000)
 })
-
-/* Burger menu */
-
-navBurger.addEventListener('click', () => {
-    menu.classList.toggle('active'),
-    navBurger.classList.toggle('active');
-});
 
 
 /* Offers */
@@ -151,14 +122,4 @@ offerBtn4.addEventListener('click', () => {
     offerPrice3.classList.remove('deleted');
     offerPrice1.classList.remove('deleted');
 })
-
-
-
-/* Dont working cards on second page */
-
-/* cardItem.addEventListener('click', () => {
-    cardItem.classList.add('active');
-});
- */
-
 
